@@ -1,0 +1,1108 @@
+:root {
+    --primary-color: #2a6fdc; /* Primary color for buttons and highlights */
+    --secondary-color: #1a1a1a; /* Secondary color for backgrounds */
+    --text-color: #ffffff; /* Default text color */
+    --border-color: rgba(50, 50, 52, 0.548); /* Border color for cards */
+    --hover-color:rgba(41, 45, 99, 0.716); /* Hover color for buttons */
+    --secondary-border-color: #3a3f72; 
+    --card-color:#0c0c0ce1;
+    background: rgb(2, 2, 38);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container{
+    width: 1500px;
+}
+
+.container{
+    width: 1370px;
+    margin-top: 70px;
+    margin-left: 65px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px;
+    box-shadow:  5px 5px 25px var(--hover-color);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    align-items: center;
+    padding-top: 30px;
+    margin-left: 80px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.logo a{
+    font-size: 35px;
+    font-weight: 700;
+    margin-left: 15px;
+    align-items: center;
+}
+
+.navbar .logo a:hover{
+   cursor: pointer;
+   color: var(--text-color);
+}
+
+.navbar a:hover{
+    color: var(--primary-color);
+    transition: all 0.5s linear;
+}
+
+
+.nav-btns{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-menu{
+    display: flex;
+    gap: 100px;
+}
+
+.explore-btn{
+    border: 1px solid var(--border-color); 
+    background-color: transparent;
+    border-radius: 10px;
+    height: 48px;
+    width: 180px;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.5s linear;
+    text-align: center;
+    align-items: center;
+}
+
+.explore-btn img{
+    height: 25px;
+    width: 25px;
+    align-items: center;
+}
+
+.explore-btn:hover{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    box-shadow: 5px 5px 15px var(--hover-color);
+    transform: translateX(-1px);
+}
+
+.content-container{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    gap: 30px;
+    background-image: url('Assets/firsttt.jpg');
+    background-size: cover;         
+    background-repeat: no-repeat;  
+    background-position: center;
+      
+}
+
+.main-content h1{
+    font-weight: 550;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: -5px;
+}
+
+.main-content p{
+    font-weight: 300;
+    color: white;
+    font-size: 20px;
+    width: 600px;
+    text-align: center;
+    line-height: 1.5;
+} 
+
+.text-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 950px;
+    margin-top: -50px;
+}    
+
+.text-area .explore-btn{
+    margin-top: 15px;
+    margin-bottom: 60px;
+    background: var(--primary-color);
+}
+
+.text-area .explore-btn:hover{
+    background: transparent;
+    color: var(--text-color);
+}
+
+.pro-users-badge {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: radial-gradient(ellipse at center, #4a4f92 0%, #3a3f72 70%);
+    border-radius: 25px; 
+    padding: 6px 12px;
+    color: var(--text-color);
+    font-size: 20px; /* Adjust font size */
+    font-weight: 500;
+    user-select: none; 
+}
+
+.pro-users-badge .icons {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.pro-users-badge .icon {
+    width: 30px;   /* Adjust size */
+    height: 30px;  /* Adjust size */
+    border: 2px solid var(--secondary-border-color); 
+    border-radius: 50%; /* Circular */
+}
+
+.pro-users-badge .icon:not(:first-child) {
+    margin-left: -17px; /* Overlap amount */
+}
+
+
+.pro-users-badge .icon.icon1 {
+    z-index: 1; /* Ensure it's on top of the next one if overlap is complex */
+}
+.pro-users-badge .icon.icon2 {
+    z-index: 2;
+}
+.pro-users-badge .icon.icon3 {
+    z-index: 3;
+}
+
+.pro-users-badge .text {
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.pro-users-badge .icons img{
+    width: 30px; /* Adjust icon size */
+    height: 30px; /* Adjust icon size */
+    border-radius: 50%; /* Circular */
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: white;
+}
+
+video{
+  width: 800px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-top: -20px;
+}
+
+
+/*scrolling fetures*/
+
+.scroll-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 900px;
+    margin-left: 215px;
+    padding: 30px;
+}
+
+.scroll-wrapper .top-heading-line::before,
+.scroll-wrapper .top-heading-line::after {
+    content: ""; 
+    flex-grow: 1; 
+    height: 1px; 
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.scroll-wrapper .top-heading-line::before {
+    background: linear-gradient(to left, rgba(64, 64, 117, 0.8) 30%, transparent 100%);
+}
+
+.top-heading-line::after {
+    background: linear-gradient(to right, rgba(64, 64, 117, 0.8) 30%, transparent 100%);
+}
+
+.scroll-wrapper .features-container {
+    display: inline-flex;
+    gap: 30px;
+    animation: scroll-left 20s linear infinite;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    flex-shrink: 0;
+    font-weight: 200;
+    text-align: center;
+    color: white;
+    font-size: 21px;
+}
+
+@keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Features section */
+.features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+
+.features .user-btn{
+    height: 45px;
+    width: 230px;
+    border-radius: 35px;
+    background:  #35588235;
+    color: white;
+    border: none;
+    font-size: 20px;   
+} 
+
+.features h1{
+    font-weight: 600;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.heading-with-lines {
+    display: flex; 
+    align-items: center; 
+    width: 1000px; 
+    margin: 10px 
+}
+
+.heading-with-lines span {
+    color: #ffffff; 
+    font-size: 2.5em; 
+    font-weight: 500;
+    padding: 0 25px; 
+    white-space: nowrap;
+    text-shadow: 0 0 5px rgba(200, 200, 255, 0.2); 
+    
+}
+
+.heading-with-lines::before,
+.heading-with-lines::after {
+    content: ""; 
+    flex-grow: 1; 
+    height: 2px; 
+}
+
+.heading-with-lines::before {
+    background: linear-gradient(to left, rgba(64, 64, 117, 0.8) 30%, transparent 100%);
+}
+
+.heading-with-lines::after {
+    background: linear-gradient(to right, rgba(64, 64, 117, 0.8) 30%, transparent 100%);
+}
+
+@media (max-width: 600px) {
+.heading-with-lines span {
+    font-size: 1.8em;
+    padding: 0 15px;
+}
+.heading-with-lines::before,
+.heading-with-lines::after {
+    height: 1px;
+}
+}
+
+.feature-item svg {
+  width: 18px; 
+  height: 18px;
+  fill: currentColor; 
+  margin-right: 8px; 
+}
+
+.info-card {
+    background-color: #0c0c0ce1; 
+    color: var(--text-color); 
+    border-radius: 12px; 
+    padding: 25px;
+    height: fit-content;
+    width: 350px; 
+    position: relative;
+    overflow: hidden; 
+    border: 2px solid var(--border-color);
+}
+
+.info-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 5px 5px 15px var(--hover-color); 
+    transition: all 0.2s ease-in-out; 
+}
+
+.info-card::before {
+    content: "";
+    position: absolute;
+    top: -60px; 
+    left: -60px;
+    width: 180px; 
+    height: 180px;
+    background: radial-gradient(
+        circle,
+        rgba(47, 44, 124, 0.941) 0%, 
+        transparent 65%
+    );
+    z-index: 0; 
+    pointer-events: none; 
+}
+
+
+.info-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.info-card .icon {
+    margin-bottom: 20px; 
+}
+
+.info-card h3 {
+    color: #FFFFFF; 
+    font-size: 25px; 
+}
+
+.info-card p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.white-icon {
+    filter: brightness(0) invert(1);
+    padding-bottom: 10px;
+}
+
+.white-icon img{
+    height: 30px;
+    width: 30px;
+    margin: -10px 0 0 0;
+}
+
+/* feedback section */
+
+.top-heading-line::before,
+.top-heading-line::after {
+    content: ""; 
+    flex-grow: 1; 
+    height: 2px; 
+}
+
+.top-heading-line::before {
+    background: linear-gradient(to left, rgba(64, 64, 117, 0.8) 30%, transparent 100%);
+}
+
+.top-heading-line::after {
+    background: linear-gradient(to right, rgba(64, 64, 117, 0.8) 30%, transparent 100%);
+}
+
+
+.top-heading-line{
+    display: flex; 
+    align-items: center; 
+    width: 1000px; 
+}
+
+.feedback-section .pro-users-badge{
+    margin-top: 50px;
+}
+
+.top-heading-line {
+    color: #ffffff; 
+    font-size: 2.5em; 
+    font-weight: bold;
+    padding: 0 25px; 
+    white-space: nowrap;
+}
+
+/* feedback section */
+
+.feedback-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    border-radius: 100px;
+}
+
+
+.feedback-section .heading-with-lines {
+    display: flex; 
+    align-items: center; 
+    width: 950px; 
+    margin: 30px 0; 
+}
+
+.feedback-section .heading-with-lines span {
+    color: #ffffff;
+    margin-top: -10px;
+    font-size: 2.5em; 
+    font-weight: 500;
+    padding: 0 25px; 
+    white-space: nowrap;
+    text-shadow: 0 0 5px rgba(60, 60, 208, 0.2); 
+}
+
+
+
+/* testimonials section */
+.video-gallery-container {
+    width: 100%;
+    max-width: 900px; /* Adjust overall width of the component */
+    /* overflow: hidden; Important: Hides parts of items outside the main viewport for the effect */
+    position: relative;
+    padding: 30px 0; /* Vertical padding to accommodate scaled active item */
+    margin-top: 40px; 
+}
+
+.video-gallery {
+    display: flex;
+    align-items: center; /* Vertically align items, especially crucial when they scale */
+    gap: 20px; /* Space between video items */
+    /* Horizontal padding allows first/last items to center properly when active */
+    /* Adjust 110px if video-item min-width changes (it's approx. half of 220px) */
+    padding: 0 calc(50% - 110px);
+    overflow-x: auto; /* Enable native horizontal scrolling (though JS controls it) */
+    scroll-behavior: smooth; /* Smooth scrolling when JS changes scrollLeft or uses scrollIntoView */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.video-gallery::-webkit-scrollbar { /* Chrome, Safari, Opera */
+    display: none; /* Hide scrollbar */
+}
+
+.video-item {
+    /* Base width for inactive items. Active item will be scaled from this. */
+    min-width: 220px; /* Adjust as needed, e.g. 200px, 250px */
+    flex-shrink: 0; /* Prevent items from shrinking */
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    overflow: hidden; /* Clip image to rounded corners */
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+                filter 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+                opacity 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    filter: brightness(0.4); /* Dim inactive items */
+    opacity: 0.7;
+    transform: scale(0.85); /* Slightly smaller when inactive */
+    background-color: #333; /* Fallback if image doesn't load */
+}
+
+.video-item.active {
+    filter: brightness(1); /* Full brightness for active item */
+    opacity: 1;
+    transform: scale(1.1); /* Make active item larger */
+    z-index: 10; /* Ensure active item is on top if items overlap during transition */
+}
+
+.video-item video{
+    height: 360px;
+    width: 500px;
+    object-fit: cover;
+
+}
+
+.video-item{
+    height: 350px;
+    width: 500px;
+    border-radius: 50px;
+}
+
+.icon-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Slight overlay to make icon pop, more visible on inactive items */
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+/* Show icon overlay on hover (for inactive items) or if item is active */
+.video-item:hover .icon-overlay,
+.video-item.active .icon-overlay {
+    opacity: 1;
+}
+.video-item:not(.active):hover .icon-overlay {
+    background-color: rgba(0, 0, 0, 0.3); /* Darker overlay on hover for inactive */
+} 
+.video-item.active .icon-overlay {
+    background-color: rgba(0, 0, 0, 0.1); /* Lighter overlay for active */
+}
+
+
+.icon {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; /* Size of the arrow/play symbol */
+    font-weight: bold;
+    color: #333; /* Color of the arrow/play symbol */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+/* Specific icons (using Unicode characters) */
+.icon.play::before { content: '▶'; color: #2a6fdc; margin-left: 3px;} /* Blue play icon */
+
+
+/* Profile section */
+.profile-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.profile1{
+    display: flex;
+    gap: 30px;
+}
+
+.profile1 .left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 600px;
+    color: white;
+    align-items: start;
+}
+
+.left-section .top-heading-line{
+    width: 300px;
+    margin-left: 100px; 
+}
+
+.left-section p{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: -25px;
+}
+
+.profile1 .left-section .user-btn{
+    margin-top:80px;
+}
+
+.profile1 .left-section .explore-btn{
+    border-radius: 10px;
+    background: var(--primary-color);
+}
+
+.profile1 .left-section .explore-btn:hover{
+    background: transparent;
+    color: var(--text-color);
+}
+
+.profile1 .right-section img{
+    height: 500px;
+    width: 500px;
+    border-radius: 25px;
+}
+
+
+/* skill section end */
+
+.Skill-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+    margin-top: 150px;
+}
+
+.Skill-section .user-btn{
+    width: 130px;
+    border-radius: 65px;
+    font-size: 20px;
+}
+
+.Skill-section .card-container{
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.Skill-section .card-container .info-card {
+    border: 2px solid rgba(50, 50, 52, 0.548);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.Skill-section .card-container .info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 15px rgba(41, 45, 99, 0.716);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.Skill-section .card-container h3{
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+
+/* Curriculum section */
+.currriculum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    border-radius: 100px;
+}
+
+.currriculum .top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 50px;
+
+}
+
+.top-content p{
+    margin-top: -10px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: rgb(255, 255, 255);
+    width: 650px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.curriculum-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.curri-box{
+    display: flex;
+    flex-direction: column;
+    border-left: 4px solid rgba(128, 128, 128, 0.133); 
+    border-right: 4px solid rgba(128, 128, 128, 0.133);
+    border-bottom: 4px solid rgba(128, 128, 128, 0.133);
+    color: white;
+    border-radius: 20px;
+    width: 800px;
+    height: 280px;
+    padding-left: 25px;
+    border-radius: 15px;
+    background: radial-gradient(circle, rgba(88, 84, 217, 0.2) 0%, rgb(6, 0, 0) 100%);
+}
+
+
+
+.curri-box .top-heading-line{
+    margin-left: 200px;
+    width: 300px;
+}
+
+.curri-box p{
+    line-height: 1.5;
+    font-size: 20px;
+    width: 800px;
+    margin-top: -8px;
+}
+
+.curri-box h3{
+    color: rgba(68, 74, 179, 0.988);
+    margin-bottom: -1px;
+    font-size: 25px;
+}
+
+.inner-container{
+    display: flex;
+    text-align: center;
+    gap: 20px;
+}
+
+.inner-container .user-btn{
+    color: white;
+    font-size: 19px;
+    width: 280px;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(50, 50, 52, 0.548);
+}
+
+.inner-container .user-btn p{
+    margin-top: 9px;
+    margin-left: -260px;
+}
+
+.currriculum-content .top-heading-line{
+    margin-top: 200px;
+}
+
+
+/* Review section */
+
+.review-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.Review-container .card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Review-container .card-container .info-card {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 370;
+    padding: 30px;
+}
+.X-profile{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.name-pos{
+    line-height: 0.1;
+}
+
+.name-pos h3{
+   font-size: 15px;
+   font-weight: 500;
+}
+
+.name-pos h4{
+   font-size: 15px;
+   font-weight: 500;
+}
+
+.X{
+    margin-left: 80px;
+    margin-top: 10px;
+    padding: 10px;
+    height: 30px;
+    border: 1px solid rgb(45, 44, 44);
+    border-radius: 10px;
+}
+
+.image img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: #000;
+}
+
+
+/* Premium plans section */
+.premium-plans{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    gap: 40px;
+}
+
+.price-container{
+    display: flex;
+    gap: 30px;
+}
+
+.price-container p{
+    font-size: 20px;
+}
+
+.price-container .curri-box{
+    position: relative;
+    width: 350px;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 25px;
+    background: radial-gradient(circle, rgba(88, 84, 217, 0.2) 0%, rgb(6, 0, 0) 100%);
+    color: white;
+    width: 370px;
+}
+
+.price-container .curri-box:hover{
+    transform: translateY(-5px); 
+    box-shadow: 5px 5px 15px var(--hover-color); 
+    transition: all 0.2s ease-in-out; 
+}
+
+.price-container .curri-box .top-heading-line{
+    width: 300px;
+    margin-left: 15px;
+    margin-top: -25px;
+}
+
+.price-top-content h3{
+    color: white;
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+.price-top-content p{
+    color: white;
+    padding-top: 20px;
+    width: 320px;
+}
+
+.price-container .curri-box .price{
+    display: flex;
+    gap: 10px;
+}
+
+.price-container .curri-box .price p{
+    margin-top: 20px;
+   font-weight: bold;
+}
+
+.price-container .curri-box .price h1{
+    font-size: 40px;
+    color: white;
+}
+
+
+.price-container .curri-box .explore-btn{
+    width: 350px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    background: var(--primary-color);
+}
+
+.price-container .curri-box .explore-btn:hover{
+    background: transparent;
+    color: var(--text-color);
+}
+
+.checklist-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+
+.checklist{
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+    align-items: start;
+}
+
+.checklist img{
+    height: 30px;
+    width: 30px;
+    margin-top: -7px;
+}
+
+/* FAQ section */
+
+.faq-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.faq-container .user-btn{
+    width: 100px;
+}
+
+.faq-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.faq{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    color: white;
+    background: radial-gradient(circle, rgba(88, 84, 217, 0.2) 50%, rgba(0, 0, 0, 1) 100%);
+    width: 900px;
+    height: 80px;
+    border-radius: 15px;
+    border: 2px solid rgba(29, 16, 67, 0.548);
+   
+}
+
+.faq p{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.faq img{
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+}
+
+/* footer section */
+.footer-image{
+    margin-top: 150px;
+    width: 1200px;
+    height: 600px;
+    background-image: url('Assets/second.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid rgba(50, 50, 52, 0.548);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    
+}
+
+.footer-image .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 600px;
+    gap: 20px;
+    font-weight: 500;
+}
+
+.footer-image .content .explore-btn{
+    width: 350px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 15px;
+    background: var(--primary-color);
+}
+
+.footer-image .content .explore-btn:hover{
+    background: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+.footer-image .content .explore-btn img
+{
+    height: 30px;
+    width: 30px;
+    margin: -4px 0 0 0;
+}
+
+.footer{
+    color: white;
+}
+
+.upper-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.upper-section h1{
+    font-size: 25px;
+}
+.menu{
+    display: flex;
+    gap: 35px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.menu li{
+    list-style: none;
+}
+.social-icons{
+    display: flex;
+    gap: 20px;
+    margin-right: 50px;
+}
+
+.social-icons li{
+    list-style: none;
+}
+
+.social-icons img{
+    height: 20px;
+    width: 20px;
+}
+
+.lower-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.copyright{
+    display: flex;
+    gap: 3px;
+}
+
+.copyright img{
+    height: 20px;
+    width: 20px;
+    margin-top: 14px;
+}
